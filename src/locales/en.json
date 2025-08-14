@@ -1,0 +1,28 @@
+{
+  "welcome_message": "Welcome to the React i18n demo!",
+  "greeting": "Hello, {{name}}!",
+  "items_count": "You have {{count}} item",
+  "items_count_plural": "You have {{count}} items",
+  "hero": {
+    "title": "Welcome to RawSeed",
+    "subtitle": "Purity from the Ground Up",
+    "description": "At RawSeed, we believe that nature holds the key to true nourishment. Founded in the UK, our mission is to reconnect people with the honest power of natural oils—pure, unrefined, and rooted in tradition. We specialize in the production of cold-pressed sesame oil and black seed oil, proudly presented under our flagship brand: Golden Drop.",
+    "learn": "Contact us"
+  },
+  "menu": {
+    "sesame_oil": "Sesame Oil",
+    "black_seed_oil": "Black Seed Oil",
+    "contact_us": "Contact Us",
+    "get_started": "Get Started"
+  },
+  "story": {
+    "title": "Our Story",
+    "description": {
+      "p1": "RawSeed began with a simple question: What if oil could be made the way it used to be—slow, clean, and full of life?",
+      "p2": "Disheartened by the rise of over-processed, chemically refined oils, we set out to create an alternative. Drawing on generations of knowledge and inspired by traditional methods, we established RawSeed to produce oils that are not only healthy, but also meaningful.",
+      "p3": "We saw a growing need for transparency in food and wellness products. So we took a different path: back to the roots.",
+      "p4": "We come from families that value natural remedies and time-honoured foods. Inspired by this heritage, we studied traditional oil pressing techniques across cultures—from ancient Anatolian sesame presses to the rich herbal traditions of the Middle East. We travelled, studied, and built partnerships with trusted growers—starting with sesame seeds sourced from rich soils in Afghanistan and Nigella sativa seeds carefully harvested in regions with long-standing herbal traditions.",
+      "p5": "What we found was powerful: nature doesn't need to be altered to be effective—it just needs to be respected."
+    }
+  }
+}
