@@ -8,6 +8,18 @@ export default defineConfig({
   base: "/rawseed-webapp/",
   plugins: [react(), tailwindcss()],
   build: {
+    // Output directory
+    outDir: "dist",
+
+    // Generate source maps for debugging (optional)
+    sourcemap: false,
+
+    // Minify the output
+    minify: "esbuild",
+
+    // Target modern browsers for smaller bundle size
+    target: "esnext",
+
     rollupOptions: {
       output: {
         // Manual chunk splitting for better caching
@@ -23,5 +35,34 @@ export default defineConfig({
         assetFileNames: "assets/[ext]/[name]-[hash].[ext]",
       },
     },
+
+    // Chunk size warning limit (500kb)
+    chunkSizeWarningLimit: 500,
+
+    // Enable CSS code splitting
+    cssCodeSplit: true,
+  },
+
+  // Development server configuration
+  server: {
+    // Enable history API fallback for SPA routing
+    // historyApiFallback: true,
+    port: 5173,
+    open: true, // Automatically open browser
+  },
+
+  // Preview server configuration (for production preview)
+  preview: {
+    port: 4173,
+    // Also enable history fallback for preview
+    // historyApiFallback: true,
+  },
+
+  // Base URL (change this if deploying to a subdirectory)
+  // base: "/",
+
+  // Define global constants
+  define: {
+    __APP_VERSION__: JSON.stringify(process.env.npm_package_version),
   },
 });
