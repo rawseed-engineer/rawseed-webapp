@@ -4,10 +4,18 @@
   "items_count": "You have {{count}} item",
   "items_count_plural": "You have {{count}} items",
   "hero": {
-    "title": "Welcome to RawSeed",
-    "subtitle": "Purity from the Ground Up",
-    "description": "At RawSeed, we believe that nature holds the key to true nourishment. Founded in the UK, our mission is to reconnect people with the honest power of natural oils—pure, unrefined, and rooted in tradition. We specialize in the production of cold-pressed sesame oil and black seed oil, proudly presented under our flagship brand: Golden Drop.",
-    "learn": "Contact us"
+    "home": {
+      "title": "Welcome to RawSeed",
+      "subtitle": "Purity from the Ground Up",
+      "description": "At RawSeed, we believe that nature holds the key to true nourishment. Founded in the UK, our mission is to reconnect people with the honest power of natural oils—pure, unrefined, and rooted in tradition. We specialize in the production of cold-pressed sesame oil and black seed oil, proudly presented under our flagship brand: Golden Drop.",
+      "learn": "Contact us"
+    },
+    "sesame_oil": {
+      "title": "Why Sesame Oil?",
+      "subtitle": "Ancient Wisdom, Modern Cooking",
+      "description": "At RawSeed, we believe in reconnecting with ingredients that have stood the test of time. Sesame oil is one of the oldest, most nourishing oils known to humankind—yet it remains underused in modern kitchens. Here&#39;s why we think it’s time for sesame oil to reclaim its place in your pantry.",
+      "learn": "Contact us"
+    }
   },
   "menu": {
     "sesame_oil": "Sesame Oil",
@@ -77,5 +85,11 @@
     "p1": "RawSeed is more than a product—it's a movement back to the essentials. We're proud to grow with our community of health seekers, conscious cooks, and lovers of natural living.",
     "p2": "We invite you to explore the golden standard of our natural oils—with nothing added, and nothing taken away, learn our story, and taste the difference that true craftsmanship makes.",
     "p3": "Welcome to RawSeed."
+  },
+  "history": {
+    "title": "The History of Sesame Oil",
+    "p1": "Sesame oil has been used for over 4,000 years. Civilizations across Asia, the Middle East, and Africa valued sesame oil not only for cooking, but also for medicine, skincare, and spiritual rituals.",
+    "p2": "In Ayurveda and Traditional Chinese Medicine, sesame oil has long been revered for its healing, detoxifying, and balancing properties. It was known as the &quot;queen of oils&quot; for a reason.",
+    "p3": "Today, we’re proud to continue this tradition through Golden Drop — our premium, cold-pressed sesame oil."
   }
 }

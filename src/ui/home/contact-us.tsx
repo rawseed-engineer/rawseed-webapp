@@ -1,15 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSeedling,
-  faEarthAsia,
-  faPeopleGroup,
-  faHeartCircleCheck,
-  faS,
-  faComments,
-  fa1,
-  faPaperPlane,
-} from "@fortawesome/free-solid-svg-icons";
+import { faComments, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 
 const ContactUs: React.FC = () => {

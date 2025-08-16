@@ -5,10 +5,6 @@ import {
   faEarthAsia,
   faPeopleGroup,
   faHeartCircleCheck,
-  faS,
-  faComments,
-  fa1,
-  faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 
