@@ -1,9 +1,16 @@
 import { useState, useEffect } from "react";
 import RawSeedLogo from "./assets/rawseed_logo.png";
-import AllOils from "./assets/hero_oil.jpg";
+import SeedsHorizontal from "./assets/seeds_horizontal.jpg";
 
 import "./i18n";
 import { useTranslation } from "react-i18next";
+import Story from "./ui/home/story";
+import WhatWeDo from "./ui/home/what-we-do";
+import Products from "./ui/home/products";
+import WhyRawSeed from "./ui/home/why-raw-seed";
+import Values from "./ui/home/Values";
+import Vision from "./ui/home/vision";
+import ContactUs from "./ui/home/contact-us";
 
 // import {
 //   Menu,
@@ -106,7 +113,7 @@ export default function App() {
         <nav
           className={`fixed top-0 left-0 right-0 z-50 px-8 py-8 sm:px-6 lg:px-8 transition-all duration-300 ${
             isSticky
-              ? "bg-slate-900 bg-opacity-95 backdrop-blur-lg shadow-lg"
+              ? "bg-[#181818] bg-opacity-95 backdrop-blur-lg shadow-lg"
               : "bg-transparent"
           }`}
         >
@@ -224,7 +231,7 @@ export default function App() {
               </h2>
 
               {/* Hero Description */}
-              <p className="text-pretty text-white text-3xl mb-6">
+              <p className="text-pretty text-white text-2xl mb-6">
                 {t("hero.description")}
               </p>
 
@@ -240,31 +247,44 @@ export default function App() {
 
         {/* White Background Section - Features */}
         <section className="rounded py-8 mt-12 sm:py-12 mx-64">
-          <div className="mx-auto grid grid-cols-1 items-center justify-items-center gap-8 px-8 sm:px-16 md:grid-cols-2">
-            <div className="max-w-md space-y-4 text-neutral-600">
-              <h1 className="text-balance text-[#a18458] text-5xl font-bold tracking-tight md:text-5xl">
-                {t("story.title")}
-              </h1>
-              <p className="text-pretty text-xl">{t("story.description.p1")}</p>
-              <p className="text-pretty text-xl">{t("story.description.p2")}</p>
-              <p className="text-pretty text-xl">{t("story.description.p3")}</p>
-              <p className="text-pretty text-xl">{t("story.description.p4")}</p>
-              <p className="text-pretty text-xl">{t("story.description.p5")}</p>
-              {/* <YnsLink
-                className="inline-flex h-10 items-center justify-center rounded-full bg-gradient-to-tr from-amber-300 to-yellow-700 px-6 font-medium text-neutral-950 
-                transition-colors hover:bg-gradient-to-bl from-amber-300 to-yellow-700 focus:outline-hidden focus:ring-1 focus:ring-neutral-950"
-                href={t("hero.link")}
-              >
-                {t("hero.action")}
-              </YnsLink> */}
-            </div>
-            <img
-              src={AllOils}
-              alt="All RawSeed Oils"
-              className="mx-8 h-[40rem] aspect-auto"
-            />
-          </div>
+          <Story />
         </section>
+
+        <section className="rounded py-8 mt-12 sm:py-12 mx-64">
+          <WhatWeDo />
+        </section>
+
+        <section className="flex-grow overflow-x-auto w-full ">
+          <img
+            src={SeedsHorizontal}
+            alt="All RawSeed Oils"
+            className="w-full brightness-70 aspect-auto"
+          />
+        </section>
+
+        <section className="rounded py-8 sm:py-12 mx-64">
+          <Products />
+        </section>
+
+        {/* Why Raw Seed ? */}
+        <section className="rounded bg-[#181818] py-12 sm:py-24">
+          <WhyRawSeed />
+        </section>
+
+        <section className="rounded bg-white py-8 sm:py-12 md:mx-64">
+          <Values />
+        </section>
+
+        {/* Our Vision */}
+        <section className="flex-grow overflow-x-auto w-full ">
+          <Vision />
+        </section>
+
+        <section className="rounded py-8 mt-12 sm:py-12 mx-64">
+          <ContactUs />
+        </section>
+
+        <section className="rounded bg-white py-8 sm:py-12 mx-64"></section>
 
         {/* White Background Section 1 - Features */}
         <section id="features" className="bg-white py-20">
@@ -460,7 +480,7 @@ export default function App() {
         </section>
 
         {/* Footer */}
-        <footer className="bg-gray-900 border-t border-gray-800 py-16">
+        <footer className="bg-[#181818] border-t border-gray-800 py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {/* Company Info */}
@@ -617,7 +637,7 @@ export default function App() {
 
             <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-400 mb-4 md:mb-0">
-                © 2025 NextApp. All rights reserved.
+                © 2025 RawSeed Inc. All rights reserved.
               </p>
               <div className="flex space-x-6">
                 <a
