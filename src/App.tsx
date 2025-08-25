@@ -37,7 +37,7 @@ export default function App() {
     <>
       {/* <Navigation /> */}
       <Routes>
-        <Route path="/rawseed-webapp/" element={<HomePage />} />
+        <Route path="/rawseed-webapp" element={<HomePage />} />
         <Route
           path="/rawseed-webapp/raw-seed-oil"
           element={<RawSeedOilPage />}

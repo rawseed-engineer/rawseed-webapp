@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/rawseed-webapp/",
+  base: "/rawseed-webapp",
   plugins: [react(), tailwindcss()],
   build: {
     // Output directory
