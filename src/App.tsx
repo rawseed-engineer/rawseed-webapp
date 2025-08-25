@@ -1,5 +1,5 @@
 // import { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import RawSeedLogo from "./assets/rawseed_logo.png";
 // import SeedsHorizontal from "./assets/seeds_horizontal.jpg";
 
@@ -34,7 +34,8 @@ export default function App() {
   // }, []);
 
   return (
-    <>
+    // <>
+    <Router>
       {/* <Navigation /> */}
       <Routes>
         <Route path="/rawseed-webapp" element={<HomePage />} />
@@ -48,7 +49,8 @@ export default function App() {
         />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-    </>
+    </Router>
+    // </>
   );
 
   // return (
